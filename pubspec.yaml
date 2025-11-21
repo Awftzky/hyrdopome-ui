@@ -24,8 +24,12 @@ flutter:
     - assets/images/logo.png
     - assets/images/onboarding1_poster.png
     - assets/images/onboarding2_poster.png
+    - assets/images/eye.png
+    - assets/images/eye-slash.png
 
   fonts:
     - family: PlusJakartaSans
       fonts:
         - asset: assets/fonts/PlusJakartaSans-Regular.ttf
+        - asset: assets/fonts/PlusJakartaSans-Bold.ttf
+        - asset: assets/fonts/PlusJakartaSans-SemiBold.ttf
