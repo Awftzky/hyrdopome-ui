@@ -152,7 +152,7 @@ class _PersonalizationPage2State extends State<PersonalizationPage2> {
                         QuestionCard(
                           title:
                               'Jenis tanaman apa saja yang ingin kamu tanam?',
-                          iconAsset: 'assets/Plant.png',
+                          iconAsset: 'assets/images/HomepageAndPersonalization/Plant.png',
                           options: const [
                             'Sayuran daun (misalnya selada, bayam)',
                             'Buah (misalnya tomat, stroberi)',
@@ -178,7 +178,7 @@ class _PersonalizationPage2State extends State<PersonalizationPage2> {
                         QuestionCard(
                           title:
                               'Berapa waktu yang bisa diluangkan per hari untuk merawat tanaman?',
-                          iconAsset: 'assets/Plant.png',
+                          iconAsset: 'assets/images/HomepageAndPersonalization/Plant.png',
                           options: const [
                             '< 10 menit',
                             '10–30 menit',
@@ -195,7 +195,7 @@ class _PersonalizationPage2State extends State<PersonalizationPage2> {
                         QuestionCard(
                           title:
                               'Di mana kamu akan menanam tanaman hidroponik?',
-                          iconAsset: 'assets/Plant.png',
+                          iconAsset: 'assets/images/HomepageAndPersonalization/Plant.png',
                           options: const [
                             'Dalam ruangan',
                             'Luar ruangan',

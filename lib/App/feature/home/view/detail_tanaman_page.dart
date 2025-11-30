@@ -22,7 +22,7 @@ class DetailTanamanPage extends StatelessWidget {
                       height: 220,
                       width: double.infinity,
                       child: Image.asset(
-                        'assets/Deskripsi.png',
+                        'assets/images/HomepageAndPersonalization/Deskripsi.png',
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -206,7 +206,7 @@ class DetailTanamanPage extends StatelessWidget {
                                 child: Stack(
                                   children: [
                                     Image.asset(
-                                      'assets/Thumnail.png',
+                                      'assets/images/HomepageAndPersonalization/Thumnail.png',
                                       width: double.infinity,
                                       height: 160,
                                       fit: BoxFit.cover,
@@ -292,10 +292,7 @@ class DetailTanamanPage extends StatelessWidget {
                 child: IconButton(
                   padding: EdgeInsets.zero,
                   iconSize: 22,
-                  icon: const Icon(
-                    Icons.arrow_back,
-                    color: Colors.black,
-                  ),
+                  icon: const Icon(Icons.arrow_back, color: Colors.black),
                   onPressed: () => Navigator.pop(context),
                 ),
               ),

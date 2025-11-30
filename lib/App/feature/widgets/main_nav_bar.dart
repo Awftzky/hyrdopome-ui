@@ -22,7 +22,6 @@ class MainNavBar extends StatelessWidget {
       backgroundColor: Colors.white,
       elevation: 20,
 
-
       selectedItemColor: activeColor,
       unselectedItemColor: inactiveColor,
       iconSize: 24,
@@ -39,28 +38,44 @@ class MainNavBar extends StatelessWidget {
         BottomNavigationBarItem(
           icon: Padding(
             padding: EdgeInsets.only(top: 6),
-            child: Image.asset('assets/Home.png', width: 24, height: 24),
+            child: Image.asset(
+              'assets/images/HomepageAndPersonalization/Home.png',
+              width: 24,
+              height: 24,
+            ),
           ),
           label: 'Beranda',
         ),
         BottomNavigationBarItem(
           icon: Padding(
             padding: EdgeInsets.only(top: 6),
-            child: Image.asset('assets/Tanaman.png', width: 24, height: 24),
+            child: Image.asset(
+              'assets/images/HomepageAndPersonalization/Tanaman.png',
+              width: 24,
+              height: 24,
+            ),
           ),
           label: 'Pantau Tanaman',
         ),
         BottomNavigationBarItem(
           icon: Padding(
             padding: EdgeInsets.only(top: 6),
-            child: Image.asset('assets/Marketplace.png', width: 24, height: 24),
+            child: Image.asset(
+              'assets/images/HomepageAndPersonalization/Marketplace.png',
+              width: 24,
+              height: 24,
+            ),
           ),
           label: 'Marketplace',
         ),
         BottomNavigationBarItem(
           icon: Padding(
             padding: EdgeInsets.only(top: 6),
-            child: Image.asset('assets/Profile.png', width: 24, height: 24),
+            child: Image.asset(
+              'assets/images/HomepageAndPersonalization/Profile.png',
+              width: 24,
+              height: 24,
+            ),
           ),
           label: 'Profil',
         ),

@@ -48,14 +48,14 @@ class ProductSale {
 
 final List<ProductSale> productSales = [
   ProductSale(
-    image: 'assets/Pipa.png',
+    image: 'assets/images/HomepageAndPersonalization/Pipa.png',
     title: 'Starter Kit',
     subtitle: 'Paket Pipa NFT',
     price: 'Rp 125.000',
     discount: 'Rp 150.000',
   ),
   ProductSale(
-    image: 'assets/Paket-lengkap.png',
+    image: 'assets/images/HomepageAndPersonalization/Paket-lengkap.png',
     title: 'Starter Kit',
     subtitle: 'Paket Lengkap',
     price: 'Rp 55.000',
@@ -79,31 +79,31 @@ class Product {
 
 final List<Product> products = [
   Product(
-    image: 'assets/Selada.png',
+    image: 'assets/images/HomepageAndPersonalization/Selada.png',
     title: 'Bayam Hidroponik',
     status: 'Mudah',
     timeText: '3-5 Ming',
   ),
   Product(
-    image: 'assets/Bayam.png',
+    image: 'assets/images/HomepageAndPersonalization/Bayam.png',
     title: 'Bayam Hidoponik',
     status: 'Mudah',
     timeText: '3-4 Ming',
   ),
   Product(
-    image: 'assets/Pakcoy.png',
+    image: 'assets/images/HomepageAndPersonalization/Pakcoy.png',
     title: 'Pakcoy Hidroponik',
     status: 'Sedang',
     timeText: '4-5 Ming',
   ),
   Product(
-    image: 'assets/Seledri.png',
+    image: 'assets/images/HomepageAndPersonalization/Seledri.png',
     title: 'Seledri hidroponik',
     status: 'Sedang',
     timeText: '8-10 Ming',
   ),
   Product(
-    image: 'assets/Stroberi.png',
+    image: 'assets/images/HomepageAndPersonalization/Stroberi.png',
     title: 'Stroberi Hidroponik',
     status: 'Sulit',
     timeText: '5-6 Ming',
@@ -264,7 +264,7 @@ class HeaderWrapper extends StatelessWidget {
             backgroundColor: Colors.white,
             child: CircleAvatar(
               radius: 24,
-              backgroundImage: AssetImage('assets/Memoji Girls 4-12.png'),
+              backgroundImage: AssetImage('assets/images/HomepageAndPersonalization/Memoji Girls 4-12.png'),
             ),
           ),
         ],
@@ -337,7 +337,7 @@ Widget progressSection() {
                   width: 90,
                   height: 130,
                   child: Image.asset(
-                    'assets/Tree.png',
+                    'assets/images/HomepageAndPersonalization/Tree.png',
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -426,7 +426,7 @@ Widget statusWithDots(String status, String timeText) {
         mainAxisSize: MainAxisSize.min,
         children: [
           Image.asset(
-            'assets/clock.png',
+            'assets/images/HomepageAndPersonalization/clock.png',
             width: 12,
             height: 12,
             color: Colors.black54,

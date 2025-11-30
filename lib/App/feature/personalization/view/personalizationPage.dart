@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'personalizationPage2.dart';
+
 class PersonalizationPage extends StatefulWidget {
   const PersonalizationPage({super.key});
 
@@ -88,8 +89,7 @@ class _PersonalizationPageState extends State<PersonalizationPage> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (_) =>
-                                      const PersonalizationPage2(),
+                                  builder: (_) => const PersonalizationPage2(),
                                 ),
                               );
                             },
@@ -145,7 +145,8 @@ class _PersonalizationPageState extends State<PersonalizationPage> {
                         QuestionCard(
                           title:
                               'Apakah kamu pernah mencoba menanam hidroponik sebelumnya?',
-                          iconAsset: 'assets/Plant.png',
+                          iconAsset:
+                              'assets/images/HomepageAndPersonalization/Plant.png',
                           options: const [
                             'Belum pernah',
                             'Pernah, tapi masih pemula',
@@ -160,7 +161,8 @@ class _PersonalizationPageState extends State<PersonalizationPage> {
                         QuestionCard(
                           title:
                               'Apa tujuan utama kamu menggunakan aplikasi HydropoMe?',
-                          iconAsset: 'assets/Plant.png',
+                          iconAsset:
+                              'assets/images/HomepageAndPersonalization/Plant.png',
                           options: const [
                             'Belajar hidroponik dari awal',
                             'Merawat tanaman hidroponik yang sudah ada',
