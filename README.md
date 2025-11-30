@@ -6,9 +6,9 @@ motion flutter slicing ui task , team lollipop
 
 ORIGINAL RUNNING DEVICE BERBEDA" 
 
-Aufa Azzaky : Iphone 17 Pro
-Bayu Alif :
-Dewa Gede Reksa :
+- Aufa Azzaky : Iphone 17 Pro
+- Bayu Alif :
+- Dewa Gede Reksa :
 
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
