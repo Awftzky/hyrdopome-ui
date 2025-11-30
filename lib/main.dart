@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'App/features/homepage/view/homepage.dart';
+import 'App/feature/homepage/view/homepage.dart';
 
 void main() {
   runApp(const MainApp());
@@ -14,7 +14,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(textTheme: GoogleFonts.plusJakartaSansTextTheme()),
-      home: const HomePage(), // <-- perbaiki di sini
+      home: const HomePage(), 
     );
   }
 }
