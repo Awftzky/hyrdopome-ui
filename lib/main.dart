@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lollipopteam/App/feature/splashscreen&onboarding/view/splashscreen_view.dart';
+import 'package:lollipopteam/App/feature/splashscreen&onboarding/view/onboarding1_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(fontFamily: "PlusJakartaSans"),
-      home: Splashscreen(),
+      home: Onboarding1View(),
     );
   }
 }
