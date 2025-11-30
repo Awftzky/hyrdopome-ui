@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'widgets/main_nav_bar.dart';
-import 'main.dart';
+import '../../widgets/main_nav_bar.dart';
+import 'homepage.dart';
 
 class MainShell extends StatefulWidget {
   const MainShell({super.key});
