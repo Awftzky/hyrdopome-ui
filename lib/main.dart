@@ -1,21 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'App/feature/home/view/homepage.dart';
-import 'App/feature/personalization/view/personalizationPage.dart';
+import 'package:lollipopteam/App/feature/splashscreen&onboarding/view/onboarding1_view.dart';
+import 'package:lollipopteam/App/feature/home/view/homepage.dart';
+import 'package:lollipopteam/App/feature/personalization/view/personalizationPage.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const MyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+/*
+App dirunning di setiap page , untuk fungsionalitas seperti routing belum diajarkan dan 
+digunakan , notes : SCAFFOLD disetiap page & void main disetiap class feature
+*/
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(textTheme: GoogleFonts.plusJakartaSansTextTheme()),
-      home: const HomePage(),
+      theme: ThemeData(fontFamily: "PlusJakartaSans"),
+      home: Onboarding1View(),
     );
   }
 }

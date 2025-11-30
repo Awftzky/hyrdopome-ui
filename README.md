@@ -4,9 +4,12 @@ motion flutter slicing ui task , team lollipop
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+ORIGINAL RUNNING DEVICE BERBEDA" 
 
-A few resources to get you started if this is your first Flutter project:
+- Aufa Azzaky : Iphone 17 Pro
+- Bayu Alif : Pixel 9
+- Dewa Gede Reksa :
+
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
