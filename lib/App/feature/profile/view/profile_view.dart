@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lollipopteam/App/feature/home/view/homepage.dart';
+import 'package:lollipopteam/App/feature/personalization/view/personalizationPage.dart';
 import 'package:lollipopteam/App/feature/profile/view/edit_profile.dart';
 import 'package:lollipopteam/App/feature/profile/view/order_status.dart';
 import 'package:lollipopteam/App/feature/widgets/main_nav_bar.dart';
@@ -266,7 +266,14 @@ class Card extends StatelessWidget {
                   borderRadius: BorderRadius.circular(16),
                 ),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => PersonalizationPage(),
+                  ),
+                );
+              },
             ),
           ),
           SizedBox(height: 20),
@@ -378,4 +385,22 @@ class CustomIconedButton extends StatelessWidget {
       ],
     );
   }
+}
+
+class TopCurveClipper extends CustomClipper<Path> {
+  @override
+  Path getClip(Size size) {
+    final Path path = Path();
+
+    path.moveTo(0, 0);
+    path.quadraticBezierTo(size.width / 2, 80, size.width, 0);
+    path.lineTo(size.width, size.height);
+    path.lineTo(0, size.height);
+    path.close();
+
+    return path;
+  }
+
+  @override
+  bool shouldReclip(CustomClipper<Path> oldClipper) => false;
 }
