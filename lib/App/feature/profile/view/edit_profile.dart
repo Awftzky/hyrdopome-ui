@@ -13,29 +13,34 @@ class EditProfile extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
         centerTitle: true,
         title: Text(
           "Edit Profil",
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
+          ),
         ),
-        backgroundColor: Colors.white,
-        leadingWidth: 80,
 
+        leadingWidth: 80, 
         leading: Padding(
           padding: const EdgeInsets.only(left: 20),
-          child: GestureDetector(
+          child: InkWell(
+            borderRadius: BorderRadius.circular(12),
             onTap: () => Navigator.pop(context),
             child: Container(
+              width: 40,
+              height: 40,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(color: Colors.grey.shade300, width: 1),
               ),
-              child: IconButton(
-                padding: EdgeInsets.zero,
-                constraints: BoxConstraints(),
-                onPressed: () => Navigator.pop(context),
-                icon: Icon(Icons.arrow_back, size: 24, color: Colors.black),
+              child: Center(
+                child: Icon(Icons.arrow_back, size: 22, color: Colors.black),
               ),
             ),
           ),
