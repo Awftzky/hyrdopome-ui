@@ -12,31 +12,36 @@ class RegisterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
+        leadingWidth: 80,
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 20),
+          child: InkWell(
+            borderRadius: BorderRadius.circular(12),
+            onTap: () => Navigator.pop(context),
+            child: Container(
+              width: 40,
+              height: 40,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: Colors.grey.shade300, width: 1),
+              ),
+              child: Center(
+                child: Icon(Icons.arrow_back, size: 22, color: Colors.black),
+              ),
+            ),
+          ),
+        ),
+      ),
+      backgroundColor: Colors.white,
       body: Padding(
         padding: EdgeInsetsGeometry.symmetric(vertical: 40, horizontal: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            SizedBox(height: 8),
-            Align(
-              alignment: Alignment.topLeft,
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.pop(context, MaterialPageRoute(builder: 
-                  (context) => AppBar())
-                  );
-                },
-                style: ElevatedButton.styleFrom(
-                  side: BorderSide(width: 1, color: Color(0xFFE8ECF4)),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadiusGeometry.circular(12),
-                  ),
-                  elevation: 0,
-                ),
-                child: Icon(Icons.arrow_back, color: Color(0xFF292D32)),
-              ),
-            ),
-            SizedBox(height: 40),
             const Text(
               "Daftar Akun dan Mulai Bertani Hidroponik! 🌿",
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),

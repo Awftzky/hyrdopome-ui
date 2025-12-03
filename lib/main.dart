@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lollipopteam/App/feature/auth/view/login_view.dart';
 import 'package:lollipopteam/App/feature/auth/view/register_view.dart';
 
 void main() {
