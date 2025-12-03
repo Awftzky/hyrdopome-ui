@@ -126,7 +126,8 @@ class _PersonalizationPage3State extends State<PersonalizationPage3> {
                       children: [
                         AreaCard(
                           title: 'Berapa luas area tanam yang kamu miliki?',
-                          iconAsset: 'assets/images/HomepageAndPersonalization/Plant.png',
+                          iconAsset:
+                              'assets/images/HomepageAndPersonalization/Plant.png',
                           areaImages: const [
                             'assets/images/HomepageAndPersonalization/Luas_area1.png',
                             'assets/images/HomepageAndPersonalization/Luas_area2.png',
