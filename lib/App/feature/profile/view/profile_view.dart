@@ -1,7 +1,7 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:lollipopteam/App/feature/home/view/homepage.dart';
+import 'package:lollipopteam/App/feature/profile/view/edit_profile.dart';
+import 'package:lollipopteam/App/feature/profile/view/order_status.dart';
 import 'package:lollipopteam/App/feature/widgets/main_nav_bar.dart';
 
 void main() {
@@ -86,12 +86,13 @@ class User extends StatelessWidget {
         children: [
           const CircleAvatar(
             radius: 40,
-            backgroundColor: Colors.white,
+            backgroundColor: Color(0xFFE8F5F2),
             child: CircleAvatar(
               radius: 38,
               backgroundImage: AssetImage(
                 'assets/images/HomepageAndPersonalization/Memoji Girls 4-12.png',
               ),
+              backgroundColor: Color(0xFFE8F5F2),
             ),
           ),
           SizedBox(width: 12),
@@ -122,7 +123,12 @@ class User extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
               ),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => EditProfile()),
+              );
+            },
             child: Text(
               "Edit Profil",
               style: TextStyle(
@@ -152,6 +158,7 @@ class Card extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.all(16),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   const Text(
                     "Status Pesanan Marketplace",
@@ -162,38 +169,27 @@ class Card extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Column(
-                        children: [
-                          Image.asset(
-                            'assets/images/box.png',
-                            width: 40,
-                            height: 40,
-                          ),
-                          SizedBox(height: 4),
-                          Text('Diproses', style: TextStyle()),
-                        ],
+                      CustomIconedButton(
+                        name: 'Diproses',
+                        image: 'assets/images/box.png',
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => OrderStatus(),
+                            ),
+                          );
+                        },
                       ),
-                      Column(
-                        children: [
-                          Image.asset(
-                            'assets/images/truck.png',
-                            width: 40,
-                            height: 40,
-                          ),
-                          SizedBox(height: 4),
-                          Text('Dikirim', style: TextStyle()),
-                        ],
+                      CustomIconedButton(
+                        name: 'Dikirim',
+                        image: 'assets/images/truck.png',
+                        onPressed: () {},
                       ),
-                      Column(
-                        children: [
-                          Image.asset(
-                            'assets/images/medal.png',
-                            width: 40,
-                            height: 40,
-                          ),
-                          SizedBox(height: 4),
-                          Text('Selesai', style: TextStyle()),
-                        ],
+                      CustomIconedButton(
+                        name: 'Selesai',
+                        image: 'assets/images/medal.png',
+                        onPressed: () {},
                       ),
                     ],
                   ),
@@ -335,9 +331,51 @@ class Card extends StatelessWidget {
               onPressed: () {},
             ),
           ),
-          SizedBox(height: 224),
+          SizedBox(height: 227),
         ],
       ),
+    );
+  }
+}
+
+class CustomIconedButton extends StatelessWidget {
+  const CustomIconedButton({
+    super.key,
+    required this.name,
+    required this.image,
+    required this.onPressed,
+  });
+
+  final String name;
+  final String image;
+  final VoidCallback onPressed;
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        InkWell(
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent,
+          hoverColor: Colors.transparent,
+          focusColor: Colors.transparent,
+          onTap: () {},
+          child: ElevatedButton(
+            onPressed: onPressed,
+            child: Column(
+              children: [
+                Image.asset(image, width: 40, height: 40),
+                SizedBox(height: 4),
+                Text(name, style: TextStyle(fontSize: 12)),
+              ],
+            ),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.transparent,
+              elevation: 0,
+              overlayColor: Colors.transparent,
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

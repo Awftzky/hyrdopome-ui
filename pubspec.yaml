@@ -35,6 +35,7 @@ flutter:
     - assets/images/logout.png
     - assets/images/arrow-left.png
     - assets/images/arrow-left-red.png
+    - assets/images/edit.png
 
   fonts:
     - family: PlusJakartaSans
