@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:lollipopteam/App/feature/auth/view/login_view.dart';
+import 'package:lollipopteam/App/feature/profile/view/profile_view.dart';
 import 'package:lollipopteam/App/feature/splashscreen&onboarding/view/onboarding1_view.dart';
 import 'package:lollipopteam/App/feature/home/view/homepage.dart';
 import 'package:lollipopteam/App/feature/personalization/view/personalizationPage.dart';
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(fontFamily: "PlusJakartaSans"),
-      home: Onboarding1View(),
+      home: LoginPage(),
     );
   }
 }
