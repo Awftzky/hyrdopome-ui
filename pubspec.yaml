@@ -25,6 +25,7 @@ flutter:
     - assets/images/logo.png
     - assets/images/onboarding1_poster.png
     - assets/images/onboarding2_poster.png
+    - assets/images/HomepageAndPersonalization/
 
   fonts:
     - family: PlusJakartaSans

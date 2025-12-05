@@ -7,7 +7,7 @@ motion flutter slicing ui task , team lollipop
 ORIGINAL RUNNING DEVICE BERBEDA" 
 
 - Aufa Azzaky : Iphone 17 Pro
-- Bayu Alif :
+- Bayu Alif : Pixel 9
 - Dewa Gede Reksa :
 
 

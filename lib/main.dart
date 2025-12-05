@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lollipopteam/App/feature/splashscreen&onboarding/view/onboarding1_view.dart';
+import 'package:lollipopteam/App/feature/home/view/homepage.dart';
+import 'package:lollipopteam/App/feature/personalization/view/personalizationPage.dart';
 
 void main() {
   runApp(const MyApp());
