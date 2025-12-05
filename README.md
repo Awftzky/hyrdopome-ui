@@ -8,7 +8,7 @@ ORIGINAL RUNNING DEVICE BERBEDA"
 
 - Aufa Azzaky : Iphone 17 Pro
 - Bayu Alif : Pixel 9
-- Dewa Gede Reksa :
+- Dewa Gede Reksa : Pixel 9a
 
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
