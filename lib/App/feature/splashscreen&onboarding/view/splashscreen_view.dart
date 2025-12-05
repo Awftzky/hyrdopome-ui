@@ -16,7 +16,7 @@ class Splashscreen extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Image.asset('assets//images/logo.png', width: 98, height: 104),
+              Image.asset('assets/images/logo.png', width: 98, height: 104),
               const SizedBox(height: 20),
               const Text(
                 "HydropoMe",
