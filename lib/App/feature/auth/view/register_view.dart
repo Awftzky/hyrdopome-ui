@@ -12,25 +12,28 @@ class RegisterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leadingWidth: 80,
-        leading: Padding(
-          padding: const EdgeInsets.only(left: 20),
-          child: InkWell(
-            borderRadius: BorderRadius.circular(12),
-            onTap: () => Navigator.pop(context),
-            child: Container(
-              width: 40,
-              height: 40,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: Colors.grey.shade300, width: 1),
-              ),
-              child: Center(
-                child: Icon(Icons.arrow_back, size: 22, color: Colors.black),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(45),
+        child: AppBar(
+          backgroundColor: Colors.white,
+          elevation: 0,
+          leadingWidth: 65,
+          leading: Padding(
+            padding: const EdgeInsets.only(left: 20),
+            child: InkWell(
+              borderRadius: BorderRadius.circular(12),
+              onTap: () => Navigator.pop(context),
+              child: Container(
+                width: 40,
+                height: 40,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: Colors.grey.shade300, width: 1),
+                ),
+                child: Center(
+                  child: Icon(Icons.arrow_back, size: 22, color: Colors.black),
+                ),
               ),
             ),
           ),
