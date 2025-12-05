@@ -40,6 +40,7 @@ class MainNavBar extends StatelessWidget {
             padding: EdgeInsets.only(top: 6),
             child: Image.asset(
               'assets/images/HomepageAndPersonalization/Home.png',
+              color: currentIndex == 0 ? activeColor : inactiveColor,
               width: 24,
               height: 24,
             ),
@@ -51,6 +52,7 @@ class MainNavBar extends StatelessWidget {
             padding: EdgeInsets.only(top: 6),
             child: Image.asset(
               'assets/images/HomepageAndPersonalization/Tanaman.png',
+              color: currentIndex == 1 ? activeColor : inactiveColor,
               width: 24,
               height: 24,
             ),
@@ -62,6 +64,7 @@ class MainNavBar extends StatelessWidget {
             padding: EdgeInsets.only(top: 6),
             child: Image.asset(
               'assets/images/HomepageAndPersonalization/Marketplace.png',
+              color: currentIndex == 2 ? activeColor : inactiveColor,
               width: 24,
               height: 24,
             ),
@@ -73,6 +76,7 @@ class MainNavBar extends StatelessWidget {
             padding: EdgeInsets.only(top: 6),
             child: Image.asset(
               'assets/images/HomepageAndPersonalization/Profile.png',
+              color: currentIndex == 3 ? activeColor : inactiveColor,
               width: 24,
               height: 24,
             ),

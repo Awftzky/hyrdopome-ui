@@ -12,35 +12,38 @@ class EditProfile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        centerTitle: true,
-        title: Text(
-          "Edit Profil",
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            color: Colors.black,
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(45),
+        child: AppBar(
+          backgroundColor: Colors.white,
+          elevation: 0,
+          centerTitle: true,
+          title: Text(
+            "Edit Profil",
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+            ),
           ),
-        ),
 
-        leadingWidth: 80, 
-        leading: Padding(
-          padding: const EdgeInsets.only(left: 20),
-          child: InkWell(
-            borderRadius: BorderRadius.circular(12),
-            onTap: () => Navigator.pop(context),
-            child: Container(
-              width: 40,
-              height: 40,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: Colors.grey.shade300, width: 1),
-              ),
-              child: Center(
-                child: Icon(Icons.arrow_back, size: 22, color: Colors.black),
+          leadingWidth: 65,
+          leading: Padding(
+            padding: const EdgeInsets.only(left: 20),
+            child: InkWell(
+              borderRadius: BorderRadius.circular(12),
+              onTap: () => Navigator.pop(context),
+              child: Container(
+                width: 40,
+                height: 40,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: Colors.grey.shade300, width: 1),
+                ),
+                child: Center(
+                  child: Icon(Icons.arrow_back, size: 22, color: Colors.black),
+                ),
               ),
             ),
           ),
@@ -106,6 +109,7 @@ class EditProfile extends StatelessWidget {
                         CustomTextField(
                           textInputType: TextInputType.visiblePassword,
                           textInputAction: TextInputAction.next,
+                          isObscure: true,
                           hint: "Password",
                           label: "Password",
                           hasSuffix: true,
@@ -114,6 +118,7 @@ class EditProfile extends StatelessWidget {
                         CustomTextField(
                           textInputType: TextInputType.visiblePassword,
                           textInputAction: TextInputAction.next,
+                          isObscure: true,
                           hint: "Ubah Password",
                           label: "Ubah Password",
                           hasSuffix: true,

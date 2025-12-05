@@ -38,7 +38,7 @@ class CustomTextField extends StatelessWidget {
           ),
           keyboardType: textInputType,
           textInputAction: textInputAction,
-          obscureText: true,
+          obscureText: isObscure,
           decoration: InputDecoration(
             suffixIcon: hasSuffix
                 ? IconButton(
@@ -58,7 +58,7 @@ class CustomTextField extends StatelessWidget {
               borderSide: BorderSide(width: 1, color: Color(0xFF179778)),
               borderRadius: BorderRadius.circular(12),
             ),
-            hintText: hint,
+            hintText: isObscure ? "••••••••" : hint,
             hintStyle: TextStyle(
               color: Color(0xFF111111),
               fontWeight: FontWeight.w400,
