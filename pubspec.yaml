@@ -36,6 +36,7 @@ flutter:
     - assets/images/arrow-left.png
     - assets/images/arrow-left-red.png
     - assets/images/edit.png
+    - assets/images/trackplants/
 
   fonts:
     - family: PlusJakartaSans
